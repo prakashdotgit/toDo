@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="lg:bg-[url('./images/todo-bg.png')]  
+             bg-[url('./images/mobile.png')] 
+             sm:bg-[url('./images/tablet.png')]
+             bg-cover bg-center bg-no-repeat min-h-screen items-center flex flex-col gap-5 p-5 ">
+
+             <a href="{% url 'insert' %}">
+              <h1 class="bg-white p-2 rounded-xl shadow-2xl bg-cover 
+             text-yellow text-center text-2xl font-bold tracking-wide hover:scale-105 duration-200  ">
+             WELCOME TO TASKMATE</h1></a>
+            
+</body>
+</html>
