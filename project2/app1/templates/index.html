@@ -34,7 +34,10 @@
                     <i class='bxr  bx-check-circle text-2xl text-blue-500'></i>
                 </a>
             </div>
-            <p class="text-gray-400 font-bold">{{ task.description }}</p>
+            <p class="text-gray-400 font-bold
+            {% if task.completed %}
+                line-through 
+                {% endif %}">{{ task.description }}</p>
             <hr>
             <div class="flex justify-between">
                 {% if task.completed %}
