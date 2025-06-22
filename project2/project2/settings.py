@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['todo-6vk7.onrender.com','127.0.0.1', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://todo-6vk7.onrender.com']
+
+
 
 # Application definition
 
